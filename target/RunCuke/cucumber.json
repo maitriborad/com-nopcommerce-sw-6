@@ -1,0 +1,752 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 65306880800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User can add product to the shopping cart",
+        "description": "",
+        "id": "computer-test;user-can-add-product-to-the-shopping-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 1807117500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 853086400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I am on homepage",
+            "match": {
+              "location": "ComputerSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3101792500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I mouse hover on Computer Menu.",
+            "match": {
+              "location": "ComputerSteps.iMouseHoverOnComputerMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3514502300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I Click on \"Desktops\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Desktops",
+                  "offset": 12
+                }
+              ],
+              "location": "ComputerSteps.iClickOn(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 568023100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I Select Sort By position \"Name: A to Z\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Name: A to Z",
+                  "offset": 27
+                }
+              ],
+              "location": "ComputerSteps.iSelectSortByPosition(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 279490300,
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found\n  (Session info: chrome\u003d113.0.5672.93)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: \u00274.9.0\u0027, revision: \u0027d7057100a6\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [9ba31e5486cb750ec969c0c0354ea538, clickElement {id\u003dD44A0765A8EC8834CEB7CEFBDADE70DA_element_84}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\\Users\\milan\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59220/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (9ba31e5486cb750ec969c0c0354ea538)] -\u003e xpath: (//button[normalize-space()\u003d\u0027Add to cart\u0027])[1]]\nSession ID: 9ba31e5486cb750ec969c0c0354ea538\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)\r\n\tat com.sun.proxy.$Proxy23.click(Unknown Source)\r\n\tat com.nopcommerce.demo.utility.Utility.clickOnElement(Utility.java:51)\r\n\tat com.nopcommerce.demo.pages.BuildYourComputerPage.addToCart(BuildYourComputerPage.java:52)\r\n\tat com.nopcommerce.demo.steps.ComputerSteps.clickOnAddToCart(ComputerSteps.java:37)\r\n\tat ✽.And Click on Add To Cart(Computer.feature:18)\r\n",
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "Click on Add To Cart",
+            "match": {
+              "location": "ComputerSteps.clickOnAddToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I Verify that user navigated to build your computer page using \"Build your own computer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Build your own computer",
+                  "offset": 64
+                }
+              ],
+              "location": "ComputerSteps.iVerifyThatUserNavigatedToBuildYourComputerPageUsing(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I Select \"2.2 GHz Intel Pentium Dual-Core E2200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2.2 GHz Intel Pentium Dual-Core E2200",
+                  "offset": 10
+                }
+              ],
+              "location": "ComputerSteps.iSelect(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I Select \"8GB [+$60.00]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8GB [+$60.00]",
+                  "offset": 10
+                }
+              ],
+              "location": "ComputerSteps.iSelect(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "I Select HDD radio \"400 GB [+$100.00]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400 GB [+$100.00]",
+                  "offset": 20
+                }
+              ],
+              "location": "ComputerSteps.iSelectHDDRadio(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "I Select OS radio \"Vista Premium [+$60.00]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Vista Premium [+$60.00]",
+                  "offset": 19
+                }
+              ],
+              "location": "ComputerSteps.iSelectOSRadio(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I Check Check-box \"Total Commander [+$5.00]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Total Commander [+$5.00]",
+                  "offset": 19
+                }
+              ],
+              "location": "ComputerSteps.iCheckCheckBox(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "I Verify the price \"$1,475.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$1,475.00",
+                  "offset": 20
+                }
+              ],
+              "location": "ComputerSteps.iVerifyThePrice(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I Click on ADD TO CART Button.",
+            "match": {
+              "location": "ComputerSteps.iClickOnADDTOCARTButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "I Verify the success Message \"The product has been added to your shopping cart\" on Top green Bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The product has been added to your shopping cart",
+                  "offset": 30
+                }
+              ],
+              "location": "ComputerSteps.iVerifyTheSuccessMessageOnTopGreenBar(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I close the bar clicking on the cross button.",
+            "match": {
+              "location": "ComputerSteps.iCloseTheBarClickingOnTheCrossButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I MouseHover on Shopping cart",
+            "match": {
+              "location": "ComputerSteps.iMouseHoverOnShoppingCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I Click on GO TO CART button.",
+            "match": {
+              "location": "ComputerSteps.iClickOnGOTOCARTButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I Verify the message \"Shopping cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Shopping cart",
+                  "offset": 22
+                }
+              ],
+              "location": "ComputerSteps.iVerifyTheMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I Change the Qty to \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 21
+                }
+              ],
+              "location": "ComputerSteps.iChangeTheQtyTo(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "I Click on Update shopping cart",
+            "match": {
+              "location": "ComputerSteps.iClickOnUpdateShoppingCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "I Verify the Total \"$2,950.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$2,950.00",
+                  "offset": 20
+                }
+              ],
+              "location": "ComputerSteps.iVerifyTheTotal(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I click on checkbox of I agree with the terms of service",
+            "match": {
+              "location": "ComputerSteps.iClickOnCheckboxOfIAgreeWithTheTermsOfService()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I Click on CHECKOUT",
+            "match": {
+              "location": "ComputerSteps.iClickOnCHECKOUT()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I Verify the Text \"Welcome, Please Sign In!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome, Please Sign In!",
+                  "offset": 19
+                }
+              ],
+              "location": "ComputerSteps.iVerifyTheText(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I Click on CHECKOUT AS GUEST Tab",
+            "match": {
+              "location": "ComputerSteps.iClickOnCHECKOUTASGUESTTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "I Fill the all mandatory field",
+            "match": {
+              "location": "ComputerSteps.iFillTheAllMandatoryField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "I Click on CONTINUE",
+            "match": {
+              "location": "ComputerSteps.iClickOnCONTINUE()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "I Click on Radio Button “Next Day Air($0.00)”",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 39
+                },
+                {
+                  "val": "00",
+                  "offset": 41
+                }
+              ],
+              "location": "ComputerSteps.iClickOnRadioButtonNextDayAir$()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "I Click on CONTINUE",
+            "match": {
+              "location": "ComputerSteps.iClickOnCONTINUE()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "I Select Radio Button “Credit Card”",
+            "match": {
+              "location": "ComputerSteps.iSelectRadioButtonCreditCard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "I click on Payment Continue",
+            "match": {
+              "location": "ComputerSteps.iClickOnPaymentContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "I Select “Master card” From Select credit card dropdown",
+            "match": {
+              "location": "ComputerSteps.iSelectMasterCardFromSelectCreditCardDropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "I Fill all the details",
+            "match": {
+              "location": "ComputerSteps.iFillAllTheDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "I click on Payment Continue",
+            "match": {
+              "location": "ComputerSteps.iClickOnPaymentContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "I Verify Payment Method is \"Credit Card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Credit Card",
+                  "offset": 28
+                }
+              ],
+              "location": "ComputerSteps.iVerifyPaymentMethodIs(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "I Verify Shipping Method is \"Next Day Air($0.00)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Next Day Air($0.00)",
+                  "offset": 29
+                }
+              ],
+              "location": "ComputerSteps.iVerifyShippingMethodIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "I Verify Total is \"$2,950.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$2,950.00",
+                  "offset": 19
+                }
+              ],
+              "location": "ComputerSteps.iVerifyTotalIs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "I Click on CONFIRM",
+            "match": {
+              "location": "ComputerSteps.iClickOnCONFIRM()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "I Verify the Text head \"Thank You\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thank You",
+                  "offset": 24
+                }
+              ],
+              "location": "ComputerSteps.iVerifyTheTextHead(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "I Verify the Success message \"Your order has been successfully processed!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your order has been successfully processed!",
+                  "offset": 30
+                }
+              ],
+              "location": "ComputerSteps.iVerifyTheSuccessMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "I Click on CONTINUE",
+            "match": {
+              "location": "ComputerSteps.iClickOnCONTINUE()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "I Verify the text using \"Welcome to our store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to our store",
+                  "offset": 25
+                }
+              ],
+              "location": "ComputerSteps.iVerifyTheTextUsing(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@smoke"
+          },
+          {
+            "line": 12,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Computer test",
+    "description": "As a User I want to test Desktop product",
+    "id": "computer-test",
+    "keyword": "Feature",
+    "uri": "Computer.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 49675399800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "As a User I want to navigate at GiftCard page",
+        "description": "",
+        "id": "top-menu-test;as-a-user-i-want-to-navigate-at-giftcard-page",
+        "after": [
+          {
+            "result": {
+              "duration": 1068166600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 44100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am home page",
+            "match": {
+              "location": "TopMenuSteps.iAmHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1539049500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on \"Gift Cards\" from top menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gift Cards",
+                  "offset": 12
+                }
+              ],
+              "location": "TopMenuSteps.iClickOnFromTopMenu(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67843300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify that User is navigated to Gift card page Using \"Gift Cards\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gift Cards",
+                  "offset": 55
+                }
+              ],
+              "location": "TopMenuSteps.verifyThatUserIsNavigatedToGiftCardPageUsing(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@smoke"
+          },
+          {
+            "line": 4,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Top menu test",
+    "description": "As a User I want to test my Top Menu",
+    "id": "top-menu-test",
+    "keyword": "Feature",
+    "uri": "TopMenu.feature"
+  }
+]
